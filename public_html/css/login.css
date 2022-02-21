@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(59, 59, 59);
+}
+
+.form {
+    background-color: rgb(124, 124, 124);
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.561);
+}
+
+

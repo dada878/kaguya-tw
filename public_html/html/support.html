@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="description" content="輝夜kaguya生存伺服器 | Minecraft PE">
+    <meta name="keywords" content="輝夜伺服器, 輝夜, kaguya, Minecraft PE伺服器, Minecraft 手機版伺服器">
+    <meta name="author" content="冰川">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    <!-- info -->
+    <title>輝夜生存伺服器</title>
+    <link rel="icon" href="../assets/hub/icon.ico">
+    <!-- MDB CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css -->
+    <link href="../css/support.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- import anvbar -->
+    <import id="anvbar"></import>
+    
+    <main class="container-fluid px-0" id="app">
+      <div class="my-5"></div>
+      <space class="d-block d-md-none" style="height: 22px;"></space>
+      <div class="text-center container text-white pt-5 pb-3">
+        <h1 class="display-3">贊助者權限說明</h1>
+        <h2 class="h3">如果喜歡我們的伺服器，不仿可以贊助支持我們營運喔</h2>
+      </div>
+      <div class="row py-5 mx-0 px-5 text-center text-white index" style="width: 100%;">
+        <div class="col-sm-3 px-0">
+            <h1 class="display-3">VIP</h1>
+            <hr class="w-75 my-4 m0a">
+            <h2 class="display-6 text-md">DC群專屬身分組<br>武器投稿選中率大<br>擁有會員專屬效果<br>獲得專屬稱號<br>贊助獲得輝夜鑽+2%</h2>
+            <hr class="w-75 my-4 m0a">
+            <h2 class="h5">累積贊助100NTD</h2>
+            <hr class="w-100 my-4 m0a">
+        </div>
+        <div class="col-sm-3 px-0">
+            <h1 class="display-3">VIP+</h1>
+            <hr class="w-75 my-4 m0a">
+            <h2 class="display-6 text-md">可製作專武(附魔10級)<br>贊助獲得輝夜鑽+5%<br>專屬傳送門(快速回家)<br>擁有專屬粒子效果<br>每周1張飛行券</h2>
+            <hr class="w-75 my-4 m0a">
+            <h2 class="h5">累積贊助300NTD</h2>
+            <hr class="w-100 my-4 m0a">
+        </div>
+        <div class="col-sm-3 px-0">
+            <h1 class="display-3">MVP</h1>
+            <hr class="w-75 my-4 m0a">
+            <h2 class="display-6 text-md">贊助獲得輝夜鑽+8%<br>專屬領地系統<br>可製作專武(附魔15級)<br>MVP專屬粒子效果<br>每周2張飛行券</h2>
+            <hr class="w-75 my-4 m0a">
+            <h2 class="h5">累積贊助500NTD</h2>
+            <hr class="w-100 my-4 m0a">
+        </div>
+        <div class="col-sm-3 px-0">
+          <h1 class="display-3">MVP+</h1>
+          <hr class="w-75 my-4 m0a">
+          <h2 class="display-6 text-md">登入伺服器擁有訊息<br>每周3張飛行券<br>MVP+專屬粒子<br>可作專武(附魔20級)<br>贊助獲得輝夜鑽+10%</h2>
+          <hr class="w-75 my-4 m0a">
+          <h2 class="h5">累積贊助1000NTD</h2>
+          <hr class="w-100 my-4 m0a">
+      </div>
+    </div>
+    <div class="text-center container text-white pt-5 pb-3">
+      <h1 class="display-3">乾爹贊助榜</h1>
+      <h2 class="h3">感謝這些玩家贊助我們，你的贊助是我們最大的動力</h2>
+    </div>
+    <section class="index text-white p-5 text-center">
+      <div class="m0a SupportTable p-3">
+        <div v-for="i in rank.length">
+          <h4>{{i}}.{{rank[i-1][0][0][0]}} 贊助 {{rank[i-1][1][0][0]}}</h4>
+        </div>
+      </div>
+    </section>
+      
+      <space class="d-block d-md-none" style="height: 40px;"></space>
+    </main>
+    <!-- import footer -->
+    <import id="footer"></import>
+</body>
+
+<!-- vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<!-- javascript -->
+<script  type="text/javascript" src="../js/global.js"></script>
+<script type="text/javascript" src="../js/support.js"></script>
+
+<!-- MDB javascript -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
+></script>
+
+</html>

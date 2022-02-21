@@ -1,0 +1,58 @@
+.h-100px {
+    height: 100px;
+}
+
+.h-200px {
+    height: 200px;
+}
+
+.h-250px {
+    height: 250px;
+}
+
+.h-300px {
+    height: 300px;
+}
+
+.h-75px {
+    height: 75px;
+}
+
+.h-50px {
+    height: 50px;
+}
+
+.text-md {
+    font-size: 30px;
+}
+
+.w-90 {
+    width: 70%;
+}
+
+.anv { 
+    top:0%;
+    position:fixed;
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+}
+
+body {
+    height: 0px;
+}
+
+.m0a {
+    margin: 0 auto;
+}
+
+.cmid{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.bottom {
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+}

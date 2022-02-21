@@ -1,0 +1,21 @@
+.index {
+    background-color: rgb(71, 71, 71);
+}
+
+body {
+    background-color: rgb(59, 59, 59);
+}
+
+.SupportTable {
+    background-color: rgb(85, 85, 85);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.315) 3px 3px 10px;
+}
+
+.SupportTable h4 {
+    border-bottom-style: solid;
+    border-bottom-color: rgb(144, 144, 144);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom-width: 1px;
+}
